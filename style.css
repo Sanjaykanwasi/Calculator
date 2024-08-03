@@ -1,0 +1,70 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(111, 103, 103);
+}
+
+/* Main Div  */
+.cal {
+  font-family: Arial, sans-serif;
+  background-color: hsl(0, 0%, 15%);
+  border-radius: 15px;
+  max-width: 500px;
+  overflow: hidden;
+}
+
+/* KEYS */
+.keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 7px;
+  padding: 25px;
+}
+
+/* Display  BOX*/
+#display {
+  width: 100%;
+  padding: 20px;
+  background-color: hsl(0, 0%, 20%);
+  font-size: 5rem;
+  text-align: left;
+  border: none;
+  color: white;
+}
+
+/* Operator Buttons */
+.operators {
+  background-color: hsl(35, 100%, 55%);
+}
+
+/* BUTTONS */
+button {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: none;
+  background-color: hsl(0, 0%, 30%);
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* HOVER EFFECT */
+button:hover {
+  background-color: hsl(0, 0%, 40%);
+}
+
+button:active {
+  background-color: hsl(0, 0%, 50%);
+}
+
+.operators:hover {
+  background-color: hsl(35, 100%, 65%);
+}
+
+.operators:active {
+  background-color: hsl(35, 100%, 75%);
+}
